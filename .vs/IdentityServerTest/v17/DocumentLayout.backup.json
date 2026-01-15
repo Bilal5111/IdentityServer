@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7053083-AEA3-4EB1-ABE7-0CFA831FC1EE}|IdentityServerTest\\IdentityServerTest.csproj|C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\identityservertest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7053083-AEA3-4EB1-ABE7-0CFA831FC1EE}|IdentityServerTest\\IdentityServerTest.csproj|solutionrelative:identityservertest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7053083-AEA3-4EB1-ABE7-0CFA831FC1EE}|IdentityServerTest\\IdentityServerTest.csproj|C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\identityservertest\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7053083-AEA3-4EB1-ABE7-0CFA831FC1EE}|IdentityServerTest\\IdentityServerTest.csproj|solutionrelative:identityservertest\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7053083-AEA3-4EB1-ABE7-0CFA831FC1EE}|IdentityServerTest\\IdentityServerTest.csproj|c:\\users\\bilalm\\source\\repos\\identityservertest\\identityservertest\\controllers\\testtokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7053083-AEA3-4EB1-ABE7-0CFA831FC1EE}|IdentityServerTest\\IdentityServerTest.csproj|solutionrelative:identityservertest\\controllers\\testtokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 19,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestTokenController.cs",
+              "DocumentMoniker": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\IdentityServerTest\\Controllers\\TestTokenController.cs",
+              "RelativeDocumentMoniker": "IdentityServerTest\\Controllers\\TestTokenController.cs",
+              "ToolTip": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\IdentityServerTest\\Controllers\\TestTokenController.cs",
+              "RelativeToolTip": "IdentityServerTest\\Controllers\\TestTokenController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T10:36:28.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\IdentityServerTest\\Startup.cs",
+              "RelativeDocumentMoniker": "IdentityServerTest\\Startup.cs",
+              "ToolTip": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\IdentityServerTest\\Startup.cs",
+              "RelativeToolTip": "IdentityServerTest\\Startup.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T07:01:22.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\IdentityServerTest\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "IdentityServerTest\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\BilalM\\source\\repos\\IdentityServerTest\\IdentityServerTest\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "IdentityServerTest\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwCYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T06:04:13.459Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 826,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

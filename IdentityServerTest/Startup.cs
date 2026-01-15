@@ -1,15 +1,18 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
+using IdentityModel.Client;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.Owin;
-using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Jwt;
 using Owin;
+using System;
+using System.Configuration;
+using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http;
 using System.Reflection;
-using System.Security.Claims;
-using System.Web.Helpers;
 using System.Web.Http;
 using System.Web.Mvc;
-using System.IdentityModel.Tokens.Jwt;
 
 [assembly: OwinStartup(typeof(IdentityServerTest.Startup))]
 
@@ -19,33 +22,70 @@ namespace IdentityServerTest
     {
         public void Configuration(IAppBuilder app)
         {
+            var config = new HttpConfiguration();
+            WebApiConfig.Register(config);
+
             var builder = new ContainerBuilder();
-
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
-
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
             var container = builder.Build();
 
+            config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
             app.UseAutofacMiddleware(container);
-            app.UseAutofacWebApi(new HttpConfiguration()); 
+            app.UseAutofacWebApi(config);
 
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            var issuer = ConfigurationManager.AppSettings["Authority"].TrimEnd('/');
+            var clientId = ConfigurationManager.AppSettings["ClientID"];
+
+            var httpClient = new HttpClient();
+            var disco = httpClient.GetDiscoveryDocumentAsync(issuer).Result;
+
+            if (disco.IsError)
+                throw new Exception(disco.Error);
+
+            var jwksJson = httpClient.GetStringAsync(disco.JwksUri).Result;
+            var keys = new JsonWebKeySet(jwksJson);
+
+            app.UseJwtBearerAuthentication(new JwtBearerAuthenticationOptions
             {
-                AuthenticationType = "Cookies",
-            });         
+                AuthenticationMode = Microsoft.Owin.Security.AuthenticationMode.Active,
 
-            AntiForgeryConfig.UniqueClaimTypeIdentifier = ClaimTypes.NameIdentifier;
+                TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = issuer,
 
-            var config = new HttpConfiguration();
+                    ValidateAudience = true,
+                    ValidAudiences = new[]
+                    {
+                        "api",                    // matches your token "aud"
+                        issuer + "/resources"     // matches your token "aud"
+                    },
 
-            WebApiConfig.Register(config);
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.FromMinutes(2),
 
-            app.UseAutofacWebApi(config);
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKeys = keys.Keys,
+
+                    NameClaimType = "sub",
+                    RoleClaimType = "role"
+                }
+            });
+
+            app.Use(async (context, next) =>
+            {
+                if (context.Authentication.User?.Identity?.IsAuthenticated == true)
+                {
+                    context.Request.User = context.Authentication.User;
+                }
+                await next();
+            });
 
             app.UseWebApi(config);
         }

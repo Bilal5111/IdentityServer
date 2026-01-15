@@ -138,7 +138,6 @@ C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\System.We
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\System.Web.WebPages.Razor.xml
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Antlr3.Runtime.pdb
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\obj\Debug\IdentityServerTest.csproj.CopyComplete
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\obj\Debug\IdentityServerTest.dll
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\obj\Debug\IdentityServerTest.pdb
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Autofac.Integration.WebApi.dll
@@ -160,3 +159,6 @@ C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
 C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\obj\Debug\Identity.4895C0F6.Up2Date
+C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft.Owin.Security.Jwt.dll
+C:\Users\BilalM\source\repos\IdentityServerTest\IdentityServerTest\bin\Microsoft.Owin.Security.Jwt.xml
